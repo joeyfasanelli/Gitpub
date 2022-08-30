@@ -12,5 +12,8 @@ app.get("/", (req, res)=>{
 const drinks = require("./models/drinks.js")
 
 app.get("/drinks", (req, res)=>{
-    res.render('drinks_index.ejs')
-})
+    res.render('drinks_index.ejs', {
+        drinks,
+    });
+});
+
