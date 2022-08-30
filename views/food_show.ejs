@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>At Foo Bar</h1>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif">
+    <h1 style="font-family: 'Eater', cursive;">At Foo Bar</h1>
     <h2><%= `${food.name}` %></h2>
     <h3><%= `$${food.price}` %></h3>
     <img src=<%=food.image + ".jpg";%> >
     <br></br>
     <a href="/drinks">Back</a>
    
-<style type="text/css">
-    body {
-      color: blanchedalmond;
-      background-color: rgb(63, 107, 146);
-    }
+    <style type="text/css">
+        body {
+          color: rgb(212, 125, 26);
+          background: url('https://i.imgur.com/xrObc8C.jpg') no-repeat center center fixed;
+          background-size: cover;
+          text-align: center;
+        }
+    </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Eater&family=Open+Sans:wght@300&family=Poiret+One&display=swap');
 </style>
 
 <style>
@@ -26,6 +32,32 @@
         text-transform: capitalize;
     }
 </style>
+
+<style>
+    a:link {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
 
     
 </body>

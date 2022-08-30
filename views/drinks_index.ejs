@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Welcome to Gitpub!</h1>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif">
+    <h1 style="font-family: 'Eater', cursive;">Welcome to Gitpub!</h1>
+    <br></br>
     <h3> DRINKS </h3>
     <ul>
         <% for(let i = 0; i < drinks.length; i++) { %>
@@ -16,6 +17,7 @@
         </li>
         <% } %>
     </ul>
+    <br></br>
     <h3> FOOD </h3>
     <ul>
         <% for(let i = 0; i < food.length; i++) { %>
@@ -25,18 +27,56 @@
         <% } %>
     </ul>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eater&family=Open+Sans:wght@300&family=Poiret+One&display=swap');
+    </style>
+
+
     <style type="text/css">
         body {
-          color: blanchedalmond;
-          background-color: rgb(63, 107, 146);
+          color: rgb(212, 125, 26);
+          background: url('https://i.imgur.com/xrObc8C.jpg') no-repeat center center fixed;
+          background-size: cover;
+          text-align: center;
         }
     </style>
 
-<style>
-    li {
+    <style>
+    li, ul {
         text-transform: capitalize;
+        text-align: left;
+        list-style-position: inside;
+        margin-left: 20%;
     }
-</style>
+    </style>
+
+    <style>
+    a:link {
+      color: rgb(0, 0, 0);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: rgb(179, 17, 17);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: rgb(226, 226, 226);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: rgb(179, 17, 17);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+
+
 
     
 </body>
