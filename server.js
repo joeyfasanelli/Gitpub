@@ -10,10 +10,11 @@ app.get("/", (req, res)=>{
 })
 
 const drinks = require("./models/drinks.js")
+const food = require("./models/food.js")
 
 app.get("/drinks", (req, res)=>{
     res.render('drinks_index.ejs', {
-        drinks,
+        drinks, food,
     });
 });
 
@@ -22,4 +23,12 @@ app.get("/drinks/:id", (req, res)=>{
         drink: drinks[req.params.id],
     });
 });
+
+app.get("/food/:id", (req, res)=>{
+    res.render('food_show.ejs', {
+        food: food[req.params.id],
+    });
+});
+
+
 
